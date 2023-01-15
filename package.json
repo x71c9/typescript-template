@@ -1,0 +1,35 @@
+{
+	"name": "typescript-template",
+	"version": "1.0.0",
+	"description": "A typescript template useful for starting and testing new projects or libraries.",
+	"main": "dist/index.js",
+	"repository": "git@github.com:x71c9/typescript-template.git",
+	"author": "x71c9 <108585118+x71c9@users.noreply.github.com>",
+	"license": "UNLICENSED",
+	"private": false,
+	"scripts": {
+		"dev:base": "node -r source-map-support/register -r dotenv/config ./dist/index.js",
+		"dev:run": "yarn tsc-watch --onSuccess \"yarn dev:base\"",
+		"dev": "yarn tsc -w"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.18",
+		"@typescript-eslint/eslint-plugin": "^5.48.1",
+		"@typescript-eslint/parser": "^5.48.1",
+		"eslint": "^8.32.0",
+		"eslint-config-esnext": "^4.1.0",
+		"eslint-config-node": "^4.1.0",
+		"eslint-plugin-import": "^2.27.4",
+		"eslint-plugin-json": "^3.1.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-standard": "^5.0.0",
+		"source-map-support": "^0.5.21",
+		"ts-node": "^10.9.1",
+		"tsc-watch": "^6.0.0",
+		"typescript": "^4.9.4"
+	},
+	"dependencies": {
+		"dotenv": "^16.0.3"
+	}
+}
