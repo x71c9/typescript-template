@@ -1,0 +1,12 @@
+.git/
+dist/
+reports/
+.serverless
+node_modules/
+yarn-error.log
+yarn.lock
+package-lock.json
+.editorconfig
+.gitignore
+.prettierignore
+.prettierrc.toml
