@@ -6,7 +6,6 @@ export default {
     es6: true,
   },
   extends: ['eslint:recommended', 'plugin:json/recommended', 'prettier'],
-  // plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',

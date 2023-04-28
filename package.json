@@ -9,10 +9,18 @@
   "private": false,
   "scripts": {
     "precommit": "yarn lint-staged --allow-empty",
-    "prepare": "yarn husky install .config/husky && yarn husky add .config/husky/pre-commit \"yarn precommit\"",
-    "dev:base": "node -r source-map-support/register -r dotenv/config ./dist/index.js",
+    "prepare": "yarn husky install .config/husky && yarn husky set .config/husky/pre-commit \"yarn precommit\"",
+    "push:test": "sh ./scripts/push.sh test",
+    "push:prod": "sh ./scripts/push.sh prod",
+    "test:watch:verbose": "NODE_ENV=dev yarn jest --coverage --watch --verbose=true",
+    "test:watch": "NODE_ENV=dev yarn jest --coverage --watch --verbose=false --silent",
+    "test:verbose": "yarn jest --coverage --verbose=true",
+    "test": "yarn jest --coverage --verbose=false --silent",
+    "dev:client": "yarn live-server client",
+    "dev:base": "node ./dist/index.js",
     "dev:run": "yarn tsc-watch --onSuccess \"yarn dev:base\"",
-    "dev": "yarn tsc -w"
+    "dev": "yarn tsc -w",
+    "build": "yarn tsc -b"
   },
   "lint-staged": {
     "*": [

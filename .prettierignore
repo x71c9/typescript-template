@@ -10,3 +10,9 @@ package-lock.json
 .gitignore
 .prettierignore
 .prettierrc.toml
+.config/husky/
+.npmignore
+scripts/
+.config/.gitkeep
+.eslintignore
+.npmrc
