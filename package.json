@@ -23,8 +23,8 @@
     "build": "yarn tsc -b"
   },
   "lint-staged": {
-    "*": [
-      "prettier --write ./src"
+    "src/**/*.{js,ts,json}": [
+      "yarn prettier --write"
     ]
   },
   "devDependencies": {
