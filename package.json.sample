@@ -1,15 +1,11 @@
 {
-  "name": "typescript-template",
   "version": "1.0.0",
-  "description": "A typescript template useful for starting and testing new projects or libraries.",
   "main": "dist/index.js",
-  "repository": "git@github.com:x71c9/typescript-template.git",
-  "author": "x71c9 <108585118+x71c9@users.noreply.github.com>",
   "license": "UNLICENSED",
-  "private": false,
+  "private": true,
   "scripts": {
     "precommit": "yarn lint-staged --allow-empty",
-    "prepare": "yarn husky install .config/husky && yarn husky set .config/husky/pre-commit \"yarn precommit\"",
+    "prepare": "yarn husky install .repo/husky && yarn husky set .repo/husky/pre-commit \"yarn precommit\"",
     "push:test": "sh ./scripts/push.sh test",
     "push:prod": "sh ./scripts/push.sh prod",
     "test:watch:verbose": "NODE_ENV=dev yarn jest --coverage --watch --verbose=true",
@@ -47,6 +43,5 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "dotenv": "^16.0.3"
   }
 }
