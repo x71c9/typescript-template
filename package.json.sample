@@ -2,6 +2,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "UNLICENSED",
+  "type": "module",
   "private": true,
   "scripts": {
     "precommit": "yarn lint-staged --allow-empty",
