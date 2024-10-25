@@ -2,3 +2,5 @@ singleQuote = true
 bracketSpacing = false
 useTabs = false
 quoteProps = "consistent"
+printWidth = 80
+

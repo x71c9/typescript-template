@@ -16,7 +16,8 @@
     "dev:base": "node ./dist/index.js",
     "dev:run": "yarn tsc-watch --onSuccess \"yarn dev:base\"",
     "dev": "yarn tsc -w",
-    "build": "yarn tsc -b"
+    "build": "yarn tsc -b",
+    "h": "yarn build && yarn ts-node ./run-method.ts"
   },
   "lint-staged": {
     "src/**/*.{js,ts,json}": [
