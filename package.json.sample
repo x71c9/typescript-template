@@ -17,7 +17,8 @@
     "dev:run": "yarn tsc-watch --onSuccess \"yarn dev:base\"",
     "dev": "yarn tsc -w",
     "build": "yarn tsc -b",
-    "h": "yarn build && yarn ts-node ./run-method.ts"
+    "h": "yarn build && yarn ts-node ./run-method.ts",
+    "t": "bash run-test.sh"
   },
   "lint-staged": {
     "src/**/*.{js,ts,json}": [
